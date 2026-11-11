@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>UnLAB Word Game</title>
+</head>
+<body bgcolor="#ffffff" text="#000000">
+<center>
+<h2>UnLAB Word Game</h2>
+<table border="2" cellpadding="8">
+  <tr><td>Center letter:</td><td><b><font size="6" color="#cc0000" id="center"></font></b></td></tr>
+  <tr><td>Other letters:</td><td><b><font size="5" id="outer"></font></b></td></tr>
+</table>
+<form id="form">
+  <p><input id="guess" size="20" autocomplete="off" autocapitalize="off">
+  <input type="submit" value="Enter"></p>
+</form>
+<p><i id="message">Make words of 4+ letters. Every word must use the center letter.</i></p>
+<p>Score: <b id="score"></b> &nbsp;&nbsp; Words: <b id="count"></b></p>
+<p>Found: <span id="found"></span></p>
+</center>
+<script src="game.js"></script>
+</body>
+</html>
